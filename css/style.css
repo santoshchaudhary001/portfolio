@@ -1,0 +1,124 @@
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.icon-bar{
+display: block;
+}
+.primary-background{
+    background-color: aqua;
+}
+.primary-background2{
+    background-color: blueviolet;
+}
+
+.vertical-ori{
+    display:grid;
+    margin: 2.5rem 0;
+
+}
+ .vertical-ori .vertical-space{
+   /* padding: 15px 0; */
+}
+.flex{
+    display:inline-flex;
+}
+/* education journery section part */
+.vertical-line{
+    border-left:0.21875rem  solid #28a745;
+    height: 8rem;
+    position: absolute;
+    left:1.3rem;
+    margin-top: -0.3125rem;
+    
+}
+hr{
+    width: 20rem;
+    color:#28a745 ;
+    margin-left:5rem;
+    margin-bottom: -2rem!important;
+    visibility: hidden;
+    
+}
+
+.footer-line{
+    width: 100%;
+    height: 0.125rem;
+    background-color: #28a745;
+}
+/* education journery section part */
+
+.text-shadow{
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgba(15, 15, 15, 0.9);
+}
+
+ #dcv{
+ color: white;
+ text-decoration: none;
+}
+
+.scrollup{
+    float:right;
+    cursor: pointer;
+    color: #27ae60;
+}
+
+/* .text-right{
+    float:right!important;
+} */
+
+
+
+/* override menue hover  */
+
+
+ 
+
+/* animation  */
+#move-text:after{
+content: '';
+animation: changetext 5s infinite linear;
+color: #27ae60;
+transition: all 20s ease;
+font-weight: lighter;
+}
+
+
+@keyframes changetext{
+    0%{
+        content: "Front-End Developer";
+    }
+    50%{
+        content: "Back-End Developer";
+    }
+    100%{
+        content: "FullStack Developer";
+    }
+}
+
+
+/* custom scrollbar creation */
+::-webkit-scrollbar{
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track{
+background: hsl(103, 7%, 19%);
+/* border-radius:5rem  */
+}
+
+::-webkit-scrollbar-thumb{
+background:hsl(134, 61%, 41%);
+border-radius: 5rem;
+}
+
+/* media query for responsive */
+@media only screen and (min:430px)and(max:600px){
+    .col-sm-12{
+       
+    }
+}
